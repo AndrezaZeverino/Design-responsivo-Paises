@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 3 novo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+        font-family: Ubuntu, Arial, Helvetica, sans-serif;
+      }
+
+      .tudo {
+        width: 100%;
+        max-width: 1200px;
+        padding: 15px;
+      }
+
+      .cabeçalho {
+
+      }
+
+      .logo {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+
+      }
+
+      .menu {
+        text-align: center;
+        background-color: gray;
+        padding: 10px;
+        width: 100%;
+        border: 0;
+        font-size: 20px;
+
+      }
+
+      .menu button {
+        background-color: gray;
+        color: white;
+      }
+
+      .menu button:hover {
+        border: 1px solid blue;
+        background-color: rgb(59, 59, 59);
+      }
+
+      .conteudo1 {
+        background-color: rgb(214, 212, 212);
+        padding: 10px;
+        margin-top: 10px;
+      }
+
+      .conteudo1 h1 {
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .botaoCalleOne {
+        padding: 20px;
+      }
+      .botaoCalleOne button{
+        color: white;
+        background-color: #0099ff;
+        padding: 10px;
+        border: 10px;
+        border-radius: 7%;
+      }
+
+      .conteudo2 {
+          padding: 20px; 
+      }
+      
+      .paises{
+          margin-bottom: 10px;
+      }
+      .paises img {
+        width: 100%;
+        padding: 10px; 
+      }
+
+      .paises p{
+          width: 100%;
+          padding: 10px;
+      }
+
+      .paises h2{
+          padding: 10px; 
+      }
+
+      .col-1 {
+        width: 8.33%;
+      }
+      .col-2 {
+        width: 16.66%;
+      }
+      .col-3 {
+        width: 25%;
+      }
+      .col-4 {
+        width: 33.33%;
+      }
+      .col-5 {
+        width: 41.66%;
+      }
+      .col-6 {
+        width: 50%;
+      }
+      .col-7 {
+        width: 58.33%;
+      }
+      .col-8 {
+        width: 66.66%;
+      }
+      .col-9 {
+        width: 75%;
+      }
+      .col-10 {
+        width: 83.33%;
+      }
+      .col-11 {
+        width: 91.66%;
+      }
+      .col-12 {
+        width: 100%;
+      }
+
+      [class*="col-"] {
+        float: left;
+        border: 1px solid gray;
+        text-align: center;
+      }
+
+      [class*="col-"] p {
+        padding: 10px;
+      }
+
+      .columns {
+        margin-top: 10px;
+        padding: 20px;
+      }
+
+      .linha {
+        margin-bottom: 20px;
+        display: flex;
+      }
+
+      .rodape {
+            background-color: rgb(27, 27, 27);
+            height: 100px;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .textorodape p {
+            color: white;
+            font-size: 10px;
+        }
+
+        .link p,
+        a {
+            color: gray;
+            font-size: 10px;
+        }
+
+        @media screen and (min-width: 480px) {
+        .topo header {
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .menu input {
+          padding: 10px;
+        }
+
+        .logo {
+          width: auto;
+        }
+       }
+
+       @media screen and (min-width: 920px) {
+        .conteudo2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="tudo">
+      <div class="cabeçalho">
+        <div class="logo"><img src="basic-logo.png" alt="logo simple" /></div>
+        <div class="menu">
+          <button>MENU</button>
+
+        </div>
+      </div>
+
+    <div class="conteudo1">
+        <h1>Simple Responsive Template</h1>
+        <p>
+          ...is a template for responsive web design. A small set of tools and
+          best practices that allows web designers to build responsive websites
+          faster. Websites built with Simple Responsive Template will be
+          optimized for screen widths between 320px and anything. Resize your
+          browser to check it out.
+        </p>
+
+        <div class="botaoCalleOne">
+            <button>CALL TO ACTION</button>
+            <button>ONE MORE</button>
+        </div>
+    </div>
+
+    <div class="conteudo2">
+
+      <div class="paises">
+        <h2>Brazil! <br /></h2>
+        <img src="basic-pic1.jpg" alt="Imagem do Brasil" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum
+        </p>
+
+        <h2>Mexico! <br /></h2>
+        <img src="basic-pic2.jpg" alt="Imagem do Mexico" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum
+        </p>
+
+        <h2>US! <br /></h2>
+        <img src="basic-pic3.jpg" alt="Imagem do US" />
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum
+      </div>
+    </div>
+      <div class="Columns">
+        <div class="linha">
+          <div class="col-12"><p>12</p></div>
+        </div>
+        <div class="linha">
+          <div class="col-1"><p>1</p></div>
+          <div class="col-11"><p>11</p></div>
+        </div>
+        <div class="linha">
+          <div class="col-2"><p>2</p></div>
+          <div class="col-10"><p>10</p></div>
+        </div>
+        <div class="linha">
+          <div class="col-3"><p>3</p></div>
+          <div class="col-9"><p>9</p></div>
+        </div>
+        <div class="linha">
+          <div class="col-4"><p>4</p></div>
+          <div class="col-8"><p>8</p></div>
+        </div>
+        <div class="linha">
+          <div class="col-5"><p>5</p></div>
+          <div class="col-7"><p>7</p></div>
+        </div>
+        <div class="linha">
+          <div class="col-6"><p>6</p></div>
+          <div class="col-6"><p>6</p></div>
+        </div>
+        <div class="linha">
+          <div class="col-4"><p>4</p></div>
+          <div class="col-4"><p>4</p></div>
+          <div class="col-4"><p>4</p></div>
+        </div>
+        <div class="linha">
+          <div class="col-1"><p>1</p></div>
+          <div class="col-2"><p>2</p></div>
+          <div class="col-3"><p>3</p></div>
+          <div class="col-3"><p>3</p></div>
+          <div class="col-3"><p>3</p></div>
+        </div>
+      </div>
+
+
+    <div class="rodape">
+        <footer>
+            <div class="textorodape">
+                <p>Footer Stuff</p> <br>
+            </div>
+            <div class="link">
+                <p>Site built with <span> <a href="/">Simple Responsive Template </a></span>
+                    by <a href="/"><span>Prowebdesign.co</a></span>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+  </body>
+</html>
